@@ -13,8 +13,4 @@ public class HelloController {
         throw new ConflictException("409");
     }
 
-    @ExceptionHandler(ConflictException.class)
-    public void handleConflictException() {
-        throw new ResponseStatusException(HttpStatus.CONFLICT);
-    }
 }
